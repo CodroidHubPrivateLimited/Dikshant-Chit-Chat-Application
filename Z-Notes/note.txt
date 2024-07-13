@@ -1,0 +1,6 @@
+For Client Side 
+Client:  npx create-react-app chit-chat
+
+
+For Server Side 
+Server : npm init,npm i express, npm i cors, npm i dotenv,  npm i cors,  npm i bycrypt, npm i socket.io,  npm i mongoose 
