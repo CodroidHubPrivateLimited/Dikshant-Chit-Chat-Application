@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
+import "./chat.css";
 
-function Chat() {
+function chat() {
   return (
-    <div>chat</div>
-  )
+    <div className='container'>
+      <div className=''>
+      <div className='topBar'>
+      <h1>Chit Chat</h1>
+
+      </div>
+      </div>
+    </div>
+  );
 }
 
-export default Chat
+export default chat;
