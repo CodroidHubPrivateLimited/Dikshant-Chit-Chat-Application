@@ -13,6 +13,7 @@ loginApi.post('/login', async (req, res) => {
     if (user && await bcrypt.compare(password, user.password)) {
       res.status(200).json({ message: 'Login successful' });
       // useNavigate("/chat");
+
     } else {
       res.status(400).json({ message: 'Invalid email or password' });
     }

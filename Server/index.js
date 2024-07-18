@@ -1,4 +1,5 @@
 // const express = require('express');
+// import Avatars from './../Client/src/components/Avatars/avatars';
 // const cors = require('cors');
 // const mongoose = require('mongoose');
 // const regRoutes = require('./allRoutes/regRoutes');
@@ -52,6 +53,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const regRoutes = require('./allRoutes/regRoutes');
 const loginRoutes = require('./allRoutes/loginRoutes');
+const avatarsRoute = require('./allRoutes/avatar Route/avatarRoutes')
 // const authenticateToken = require('./middleware/authenticateToken'); // Import middleware
 const authenticateToken=require('./utils/middleware/authentication_authorization')
 require('dotenv').config();
@@ -68,6 +70,7 @@ mongoose.connect('mongodb://localhost:27017/chitChat', {
 // Use registration and login routes
 app.use('/api', regRoutes);
 app.use('/api', loginRoutes);
+app.use('/api', avatarsRoute);
 
 // Example protected route
 app.get('/api/protected', authenticateToken, (req, res) => {

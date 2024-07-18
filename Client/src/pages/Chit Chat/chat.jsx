@@ -1,16 +1,17 @@
 import React from 'react';
-import "./chat.css";
+import styles from "./chat.module.css";
 
 function chat() {
   return (
-    <div className='container'>
-      <div className=''>
-      <div className='topBar'>
+    <div className={styles.mainContainer}>
+
+      <div className={styles.container}>
+
       <h1>Chit Chat</h1>
+
 
       </div>
       </div>
-    </div>
   );
 }
 
